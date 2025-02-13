@@ -1,0 +1,88 @@
+*{ font-family: arial, sans-serif;
+  margin: 0;
+}
+body {
+  background-color: #f4f4f4;
+}
+body > div {
+  height: 100vh;
+  width: 100vw;
+}
+#container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+#container > div {
+  display: flex;
+}
+#navbar, #footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(170, 167, 167);
+  width: 95%;
+  padding: 2em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#footer {
+  position: sticky; 
+  bottom: 0;
+}
+#navbar nav, #footer nav {
+  display: flex;
+  gap: 2em;
+}
+#navbar a, #footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+#navbar a:hover, #footer a:hover {
+  background-color: #666; 
+  transform: scale(1.0);
+}
+#main-section {
+  flex-grow: 1;
+  display: flex;
+}
+#main-section > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red {
+  background-color: #b05f6d;
+  color: white;
+}
+.blue {
+  background-color: #275db3;
+  color: white;
+}
+.yellow {
+  background-color: rgb(232, 232, 174);
+  color: white;
+}
+.purple {
+  background-color: rgb(205, 144, 209);
+  color: white;
+}
+.pink {
+  background-color: rgb(235, 129, 175);
+  color: white;
+}
+.home {
+  background-color: darkseagreen;
+  color: white;
+}
